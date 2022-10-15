@@ -13,8 +13,9 @@ import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import { transferCustomToken } from './utils/transferToken';
 const NETWORK = clusterApiUrl("devnet");
-let lamportsRequiredToPlay = 0.1 * LAMPORTS_PER_SOL
-const gameWalletPublicKey = new PublicKey("62AtDMhgaW1YQZCxv7hGBE7HDTU67L71vs4VQrRVBq3p")
+let lamportsRequiredToPlay = 0.3 * LAMPORTS_PER_SOL
+//sulukarpzu walle
+const gameWalletPublicKey = new PublicKey("BtaLeKL6ppVGsvXCdfSSoSUpwXQEgJnmmcT3ywGiLhTH")
 
 function App() {
 
@@ -164,7 +165,7 @@ function App() {
         {providerPubKey && <span>{providerPubKey.toBase58()}</span>}
       </header>
       <div className="gameThumbnail">
-        <div className="amountNeed">SOL needed to play: 0.1 SOL </div>
+        <div className="amountNeed">SOL needed to play: 0.3 SOL </div>
         <img src={stack} alt="Stack Game" />
         <button className="playButton" onClick={() => playStack()}>{loading ? "Transferring SOL ..." : "Play Stack It"}</button>
       </div>
